@@ -1,0 +1,51 @@
+{
+    "Lua.diagnostics.globals": ["vim"],
+    "coc.preferences.formatOnSaveFiletypes": [
+        "css",
+        "sass",
+        "scss",
+        "markdown",
+        "html",
+        "json",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "python",
+        "lua",
+        "rust",
+        "gd",
+        "cpp"
+    ],
+    "python.pythonPath": "python3",
+    "rust-analyzer.inlayHints.typeHints": false,
+
+    "languageserver": {
+        "godot": {
+            "host": "127.0.0.1",
+            "filetypes": ["gdscript"],
+            "port": 6005
+        },
+        "csharp-ls": {
+            "command": "csharp-ls",
+            "filetypes": ["cs"],
+            "rootPatterns": ["*.csproj", ".vim/", ".git/", ".hg/"]
+        },
+        "coc-clangd": {
+            "command": "clangd",
+            "filetypes": ["c", "cpp", "objc", "objcpp"],
+            "rootPatterns": [
+                "compile_flags.txt",
+                "compile_commands.json",
+                ".git/"
+            ],
+            "settings": {
+                "clangd": {
+					"
+				}
+            }
+        }
+    },
+	"inlayHint.enable": false,
+    "svelte.enable-ts-plugin": true
+}
